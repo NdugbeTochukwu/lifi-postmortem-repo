@@ -14,14 +14,14 @@ response_contract = "0x<DEPLOYED_LIFIAPPROVALRESPONSE_ADDRESS>"
 response_function = "handleResponse(bytes)"
 
 # Operational tuning: align these with the trap constants in LifiApprovalTrap.sol
-# WINDOW_BLOCKS = 33 in the trap; ORIGIN_THRESHOLD = 20
+# WINDOW_BLOCKS = 30 in the trap; ORIGIN_THRESHOLD = 20
 cooldown_period_blocks = 33
 min_number_of_operators = 1
 max_number_of_operators = 2
 
 # How many past blocks of samples to include when Drosera asks the trap for evidence.
 # This can be equal or slightly larger than WINDOW_BLOCKS; adjust as needed.
-block_sample_size = 40
+block_sample_size = 10
 
 private_trap = true
 whitelist = ["YOUR_OPERATOR_WALLET_ADDRESS"]
