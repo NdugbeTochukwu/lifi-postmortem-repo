@@ -1,7 +1,7 @@
-# lifi-postmortem-repo
-```md
+
 # LI.FI — Postmortem & Defensive Artifacts
 
+## Introduction
 This repository contains a public, defensive postmortem and safe remediations for the LI.FI incident (July 16, 2024) where attackers abused an arbitrary-call facet to drain wallets with infinite approvals.
 
 **What this repo provides**
