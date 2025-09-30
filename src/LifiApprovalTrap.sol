@@ -7,7 +7,7 @@ pragma solidity ^0.8.20;
 ///         interact with the same spender within a sliding block window — indicative of mass-drain from infinite approvals.
 contract LifiApprovalTrap {
     uint256 public constant ORIGIN_THRESHOLD = 20;   // tune in production
-    uint256 public constant WINDOW_BLOCKS = 40;      // sliding window in blocks
+    uint256 public constant WINDOW_BLOCKS = 30;      // sliding window in blocks
 
     // per spender: list of (origin, txHash, block)
     mapping(address => address[]) internal originsBySpender;
