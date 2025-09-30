@@ -14,8 +14,8 @@ response_contract = "0x<DEPLOYED_LIFIAPPROVALRESPONSE_ADDRESS>"
 response_function = "handleResponse(bytes)"
 
 # Operational tuning: align these with the trap constants in LifiApprovalTrap.sol
-# WINDOW_BLOCKS = 40 in the trap; ORIGIN_THRESHOLD = 20
-cooldown_period_blocks = 40
+# WINDOW_BLOCKS = 33 in the trap; ORIGIN_THRESHOLD = 20
+cooldown_period_blocks = 33
 min_number_of_operators = 1
 max_number_of_operators = 2
 
