@@ -8,20 +8,10 @@ drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
 [traps.lifi_approvaltrap]
 path = "out/LifiApprovalTrap.sol/LifiApprovalTrap.json"
 response_contract = "0x<DEPLOYED_LIFIAPPROVALRESPONSE_ADDRESS>"
-
-# The response function to invoke on the response contract.
-# Our response contract exposes: function handleResponse(bytes calldata payload) external returns (bool)
 response_function = "handleResponse(bytes)"
-
-# Operational tuning: align these with the trap constants in LifiApprovalTrap.sol
-# WINDOW_BLOCKS = 30 in the trap; ORIGIN_THRESHOLD = 20
 cooldown_period_blocks = 33
 min_number_of_operators = 1
 max_number_of_operators = 2
-
-# How many past blocks of samples to include when Drosera asks the trap for evidence.
-# This can be equal or slightly larger than WINDOW_BLOCKS; adjust as needed.
 block_sample_size = 10
-
 private_trap = true
 whitelist = ["YOUR_OPERATOR_WALLET_ADDRESS"]
